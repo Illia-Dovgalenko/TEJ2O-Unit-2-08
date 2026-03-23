@@ -12,45 +12,53 @@ pins.digitalWritePin(DigitalPin.P15, 0)
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-
+   
+    //RGB RED
     pins.digitalWritePin(DigitalPin.P13, 1)
     basic.showString("Red")
     basic.pause(1000)
-
+   
+    //RGB Blue
     pins.digitalWritePin(DigitalPin.P13, 0)
     pins.digitalWritePin(DigitalPin.P14, 1)
     basic.showString("Blue")
     basic.pause(1000)
-
+   
+    //RGB Green
     pins.digitalWritePin(DigitalPin.P14, 0)
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.showString("Green")
     basic.pause(1000)
-
+   
+    //RGB Magenta
     pins.digitalWritePin(DigitalPin.P13, 1)
     pins.digitalWritePin(DigitalPin.P14, 1)
     pins.digitalWritePin(DigitalPin.P15, 0)
     basic.showString("Magenta")
     basic.pause(1000)
-
+    
+    //RGB Yellow
     pins.digitalWritePin(DigitalPin.P13, 1)
     pins.digitalWritePin(DigitalPin.P14, 0)
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.showString("Yellow")
     basic.pause(1000)
-
+   
+    //RGB Cyan
     pins.digitalWritePin(DigitalPin.P13, 0)
     pins.digitalWritePin(DigitalPin.P14, 1)
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.showString("Cyan")
     basic.pause(1000)
-
+    
+    //RGB White
     pins.digitalWritePin(DigitalPin.P13, 1)
     pins.digitalWritePin(DigitalPin.P14, 1)
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.showString("White")
     basic.pause(1000)
 
+    // RGB off
     pins.digitalWritePin(DigitalPin.P13, 0)
     pins.digitalWritePin(DigitalPin.P14, 0)
     pins.digitalWritePin(DigitalPin.P15, 0)
